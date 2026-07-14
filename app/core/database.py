@@ -22,7 +22,7 @@ class Base(DeclarativeBase):
 from app.models.user import User
 
 async def get_db() -> AsyncGenerator[AsyncSession, None]:
-    with AsyncSessionLocal as session:
+    async with AsyncSessionLocal() as session:
         try:
             yield session
         finally:
