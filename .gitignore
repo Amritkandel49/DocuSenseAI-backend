@@ -1,5 +1,7 @@
 .env
 .venv
+**/__pycache__/
+*.pyc
 Workflow.md
 folder_structure.txt
 DocuSense-AI-Project-Kickoff-Guide.md
